@@ -908,10 +908,6 @@ select {
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
-.col-12 {
-  flex: 0 0 auto;
-  width: 100%;
-}
 .g-5, .gx-5 {
   --bs-gutter-x: 3rem;
 }
@@ -3282,10 +3278,6 @@ input#nav-toggle:checked ~ #nav-menu {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:\!max-w-\[800px\] {
-    max-width: 800px !important;
   }
 
   .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
