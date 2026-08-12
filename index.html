@@ -3,11 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected work by Michael Gwilt." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="/mark.svg" type="image/svg+xml" />
     <title>Michael Gwilt</title>
-    <script type="module" crossorigin src="/assets/index-DuWXEu0D.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-HPqutQ3m.css">
+    <script type="module" crossorigin src="/assets/index-iLnbkhBm.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BtXZaduw.css">
   </head>
   <body>
-    <div id="app"></div>
+    <header id="intro">
+      <h1 class="name"><a href="#intro">Michael Gwilt</a></h1>
+      <p class="experience">22 years building software. <a href="https://www.linkedin.com/in/mgwilt" rel="me">LinkedIn</a>.</p>
+      <nav aria-label="Primary navigation">
+        <a href="#roles">Roles</a>
+        <a href="#bodies">Work</a>
+        <a href="#links">Links</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="roles" class="roles" aria-labelledby="roles-title">
+        <h2 id="roles-title">Recent roles</h2>
+        <article>
+          <h3>BetterLabs.AI</h3>
+          <p>Founding Engineer</p>
+          <ul>
+            <li>Product: mobile, web, realtime voice, memory.</li>
+            <li>Platform: GCP, analytics, cloud infrastructure.</li>
+            <li>Automation: releases, deployments, drift guards, recovery.</li>
+            <li>Harnesses: path-aware gates, repository knowledge, agent workflows, evaluation.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>S&amp;P Global</h3>
+          <p>Director, Applied AI<br />Head of Cloud Strategy &amp; DevOps<br />Principal Software Engineer</p>
+          <ul>
+            <li>Technology leadership: S&amp;P Global Research, Advisory, and Specialty Solutions.</li>
+            <li>Global team: engineering and DevOps.</li>
+            <li>Cloud: AWS migration and cost optimization.</li>
+            <li>DevOps transformation: cloud security, infrastructure as code, developer experience.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="bodies" aria-labelledby="bodies-title">
+        <h2 id="bodies-title">Embodiment</h2>
+        <p>Learning, control, reconstruction, and character systems crossing from simulation into physical performance.</p>
+        <ol class="projects">
+          <li>
+            <article>
+              <h3>ARDY: Prompt-Conditioned MetaHuman Motion</h3>
+              <p>439 full-body frames from two separate prompts at 19.99 fps, streamed from remote ARDY inference over LiveKit/WebRTC and retargeted to a MetaHuman.<br /><time datetime="PT23S">23 seconds</time></p>
+              <a class="video-trigger" href="https://www.youtube.com/watch?v=CPOovTVNTj4" data-video-id="CPOovTVNTj4" data-video-format="landscape">
+                <img src="/posters/ardy-metahuman.jpg" alt="ARDY motion system driving a MetaHuman from four tracked views" width="1280" height="720" loading="lazy" decoding="async" />
+                <span>Play video</span>
+              </a>
+              <div class="player-slot"></div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>NVIDIA Isaac Lab: Ant Locomotion Following Randomized Targets</h3>
+              <p>Reinforcement learning.<br /><time datetime="PT1M">1 minute</time></p>
+              <a class="video-trigger" href="https://www.youtube.com/watch?v=b1UCCem7wO0" data-video-id="b1UCCem7wO0" data-video-format="landscape">
+                <img src="/posters/isaac-ant.jpg" alt="Isaac Lab ant locomotion simulation" width="1280" height="720" loading="lazy" decoding="async" />
+                <span>Play video</span>
+              </a>
+              <div class="player-slot"></div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>SAM 3D Body: Video to Mesh and Joints</h3>
+              <p>A single-image body-reconstruction model is run independently on every frame, recovering the primary person's 3D mesh and joint coordinates before the sequence is reassembled for playback.<br /><time datetime="PT23S">23 seconds</time></p>
+              <a class="video-trigger" href="https://www.youtube.com/watch?v=LUblIwdURX0" data-video-id="LUblIwdURX0" data-video-format="landscape">
+                <img src="/posters/sam-3d-body.jpg" alt="Source video, tracked joints, and recovered SAM 3D Body mesh shown side by side" width="1280" height="720" loading="lazy" decoding="async" />
+                <span>Play video</span>
+              </a>
+              <div class="player-slot"></div>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section id="interfaces" aria-labelledby="interfaces-title">
+        <h2 id="interfaces-title">Interfaces</h2>
+        <p>A realtime interface generated on demand.</p>
+        <ol class="projects">
+          <li>
+            <article>
+              <h3>Avatar: Voice-Composed A2UI</h3>
+              <p>LiveKit realtime voice, A2UI, and an observer pattern. Acknowledged snapshots render in Unreal as a 30,000-particle Niagara interface.<br /><time datetime="PT1M5S">1 minute 5 seconds</time></p>
+              <a class="video-trigger video-trigger--short" href="https://www.youtube.com/watch?v=DwI6Cg30XD4" data-video-id="DwI6Cg30XD4" data-video-format="short">
+                <img src="/posters/realtime-ai-ux.jpg" alt="Voice-composed A2UI surface rendered as a Niagara particle swarm" width="720" height="1280" loading="lazy" decoding="async" />
+                <span>Play video</span>
+              </a>
+              <div class="player-slot"></div>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section id="fields" aria-labelledby="fields-title">
+        <h2 id="fields-title">Fields and simulations</h2>
+        <p>Forces, fields, and emergence used as material for interaction and expression.</p>
+        <ol class="projects">
+          <li>
+            <article>
+              <h3>Bad Apple: Precomputed Point-Swarm Animation</h3>
+              <p>13,824 identity-stable points from 12 fps silhouette masks, precomputed into a custom compressed animation asset.<br /><time datetime="PT3M40S">3 minutes 40 seconds</time></p>
+              <a class="video-trigger" href="https://www.youtube.com/watch?v=37L7744vtcw" data-video-id="37L7744vtcw" data-video-format="landscape">
+                <img src="/posters/bad-apple-point-swarm.jpg" alt="Bad Apple silhouette rendered as a point swarm inside Flux Revenant" width="1280" height="720" loading="lazy" decoding="async" />
+                <span>Play video</span>
+              </a>
+              <div class="player-slot"></div>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <section id="links" aria-labelledby="links-title">
+        <h2 id="links-title">Elsewhere</h2>
+        <ul>
+          <li><a href="https://github.com/mgwilt">GitHub</a></li>
+          <li><a href="https://www.youtube.com/@mike_dot_dev">YouTube</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Michael Gwilt</p>
+      <p><a href="#intro">Back to top</a></p>
+    </footer>
   </body>
 </html>
